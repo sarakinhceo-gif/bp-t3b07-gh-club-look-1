@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공항 클럽 룩북 정보 - 상세 가이드 & 팁</title>
+    <meta name="description" content="공항 클럽 룩북의 모든 것. 스타일링 팁, 추천 아이템, 계절별 트렌드까지. 나만의 공항 클럽 룩북을 완성하는 상세 정보를 확인하세요.">
+    <meta name="keywords" content="공항 클럽 룩북 정보, 공항 클럽 스타일링 팁, 클럽 룩북 가이드, 여행 패션 정보, 공항 패션 상세">
+    <meta name="bpaas-design-system" content="midnight-glass">
+    <meta name="bpaas-design-theme" content="kr-midnight-glass">
+    <link rel="canonical" href="https://t3b07-gh-club-look-1.vercel.app/">
+    <meta property="og:title" content="공항 클럽 룩북 정보 - 당신을 위한 스타일 가이드">
+    <meta property="og:description" content="공항부터 클럽까지, 완벽한 룩북을 위한 모든 정보. 팁, 아이템, 트렌드를 한눈에.">
+    <meta property="og:image" content="https://t3b07-gh-club-look-1.vercel.app/og-image.jpg">
+    <meta property="og:url" content="https://t3b07-gh-club-look-1.vercel.app/">
+    <meta name="twitter:card" content="summary_large_image">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0a0a0f; color: #e0e0e0; line-height: 1.7; }
+        a { color: #c0a0d0; text-decoration: none; transition: color 0.3s; }
+        a:hover { color: #e0c0f0; }
+        img { max-width: 100%; height: auto; display: block; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        header { background: linear-gradient(135deg, #0d0d1a 0%, #1a1a2e 100%); border-bottom: 1px solid rgba(192, 160, 208, 0.2); position: sticky; top: 0; z-index: 100; }
+        .header-inner { display: flex; justify-content: space-between; align-items: center; height: 70px; }
+        .site-title { font-size: 1.4rem; font-weight: 700; letter-spacing: 2px; }
+        .site-title a { color: #e0c0f0; text-shadow: 0 0 20px rgba(192, 160, 208, 0.3); }
+        nav { display: flex; gap: 30px; }
+        nav a { font-size: 0.95rem; font-weight: 500; color: #b0b0c0; position: relative; padding: 5px 0; }
+        nav a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: #c0a0d0; transition: width 0.3s; }
+        nav a:hover::after { width: 100%; }
+        nav a.active { color: #e0c0f0; }
+        nav a.active::after { width: 100%; }
+        .hamburger { display: none; flex-direction: column; cursor: pointer; gap: 5px; padding: 5px; }
+        .hamburger span { width: 28px; height: 2px; background: #e0c0f0; border-radius: 2px; transition: all 0.3s; }
+        .hero { padding: 80px 0 60px; text-align: center; background: linear-gradient(180deg, #0d0d1a 0%, #0a0a0f 100%); }
+        .hero h1 { font-size: 3rem; font-weight: 700; color: #f0e0ff; margin-bottom: 20px; letter-spacing: -1px; }
+        .hero p { font-size: 1.15rem; color: #b0a0c0; max-width: 650px; margin: 0 auto; }
+        .section { padding: 60px 0; }
+        .section h2 { font-size: 2rem; font-weight: 600; color: #e0c0f0; margin-bottom: 30px; text-align: center; letter-spacing: 1px; }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+        .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 25px; }
+        .card { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(192, 160, 208, 0.15); border-radius: 16px; padding: 30px; transition: all 0.4s; }
+        .card:hover { background: rgba(255, 255, 255, 0.06); border-color: rgba(192, 160, 208, 0.3); transform: translateY(-4px); }
+        .card h3 { font-size: 1.3rem; color: #e0c0f0; margin-bottom: 15px; }
+        .card p { color: #c0b0d0; font-size: 0.95rem; }
+        .card .icon { font-size: 2rem; margin-bottom: 15px; }
+        .faq-item { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(192, 160, 208, 0.1); border-radius: 12px; padding: 25px; margin-bottom: 15px; }
+        .faq-item h4 { font-size: 1.1rem; color: #d0c0e0; margin-bottom: 10px; cursor: pointer; }
+        .faq-item p { color: #b0a0c0; font-size: 0.95rem; }
+        .info-box { background: linear-gradient(135deg, rgba(192, 160, 208, 0.08), rgba(160, 120, 180, 0.05)); border: 1px solid rgba(192, 160, 208, 0.2); border-radius: 16px; padding: 35px; margin: 30px 0; }
+        .info-box h3 { color: #e0c0f0; font-size: 1.4rem; margin-bottom: 15px; }
+        .info-box p { color: #c0b0d0; }
+        footer { text-align: center; padding: 40px 0; border-top: 1px solid rgba(192, 160, 208, 0.1); color: #808090; font-size: 0.9rem; }
+        @media (max-width: 768px) {
+            nav { display: none; flex-direction: column; position: absolute; top: 70px; left: 0; right: 0; background: #0d0d1a; border-bottom: 1px solid rgba(192, 160, 208, 0.2); padding: 20px; gap: 15px; }
+            nav.open { display: flex; }
+            .hamburger { display: flex; }
+            .hero h1 { font-size: 2rem; }
+            .grid-2, .grid-3 { grid-template-columns: 1fr; }
+            .section { padding: 40px 0; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-inner">
+            <div class="site-title"><a href="/">공항 클럽 룩북</a></div>
+            <nav id="main-nav">
+                <a href="/">홈</a>
+                <a href="/lookbook.html">룩북</a>
+                <a href="/info.html" class="active">정보</a>
+                <a href="/tips.html">팁</a>
+                <a href="/trends.html">트렌드</a>
+            </nav>
+            <div class="hamburger" onclick="document.getElementById('main-nav').classList.toggle('open')">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>공항 클럽 룩북, 모든 정보</h1>
+            <p>형, 공항에서 클럽까지 스타일 죽이는 법 다 알려줌. 입고, 신고, 가방까지 완벽하게 맞추는 꿀팁 대방출.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>🔥 핵심 정보 3가지</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="icon">✈️</div>
+                    <h3>공항 룩 필수템</h3>
+                    <p>편안하면서도 섹시한 오버핏 자켓, 슬림핏 블랙 진, 화이트 스니커즈. 이 조합이면 게이트에서부터 시선 강탈.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🕶️</div>
+                    <h3>클럽 룩 변신</h3>
+                    <p>공항에서 입은 자켓 벗으면 시크한 크롭탑 or 시스루. 악세사리로 포인트 주면 바로 클럽 메인 댄서.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🧳</div>
+                    <h3>가방 & 악세사리</h3>
+                    <p>크로스백 하나로 공항 수속부터 클럽까지 OK. 실버 체인 목걸이랑 링 귀걸이면 조명 아래서 반짝임.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>📖 상세 가이드</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>공항에서 살아남는 법</h3>
+                    <p>비행기 10시간 타도 구겨지지 않는 옷감? 울 블렌드 자켓이 답이야. 레이어드 잘하면 도착해서 바로 클럽 입장 가능. 내 경험상 슬랙스보다는 스트레이트 진이 낫더라.</p>
+                </div>
+                <div class="card">
+                    <h3>클럽 입장 TIP</h3>
+                    <p>줄 서지 말고 바로 입장하고 싶으면? 올블랙 룩에 골드 악세사리 하나. 문지기 형들이 눈여겨봄. 신발은 깔끔한 첼시부츠 or 로퍼. 운동화는 가급적 피해.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="info-box">
+                <h3>🎯 실전 꿀팁 - 형이 직접 겪어본 썰</h3>
+                <p>지난주에 인천공항에서 LA까지 갔다왔는데, 자켓 안에 입은 반팔 티가 포인트였어. 비행기 안에서 자켓 벗으니까 옆자리 외국인 누나가 "nice style" 하더라. 클럽에서는 그 티셔츠 소매 살짝 걷고 체인 목걸이 보여주면 분위기 장난 아님. 진짜임.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>❓ 자주 묻는 질문</h2>
+            <div class="faq-item">
+                <h4>공항 클럽 룩북은 처음인데 어떻게 시작해?</h4>
+                <p>형, 너무 어렵게 생각하지 마. 기본 블랙 자켓 하나, 화이트 티, 슬림 진, 스니커즈만 있으면 시작이야. 거기에 선글라스 하나 끼면 프로 느낌 남.</p>
+            </div>
+            <div class="faq-item">
+                <h4>캐리어에도 신경 써야 해?</h4>
+                <p>당연하지! 캐리어도 스타일의 일부야. 매트 블랙 or 다크 그레이 하드 케이스가 제일 무난하고 센스 있어 보여. 스티커 하나 붙이면 포인트.</p>
+            </div>
+            <div class="faq-item">
+                <h4>클럽에서 옷이 땀에 젖을까 봐 걱정이야</h4>
+                <p>ㅋㅋㅋ 그럴 땐 속에 민소매나 크롭탑 입어. 자켓 벗으면 오히려 더 섹시해짐. 향수는 꼭 챙기고, 시트러스 계열이 클럽 분위기랑 잘 어울려.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 공항 클럽 룩북. All rights reserved. | 형들의 스타일을 위해</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.faq-item h4').forEach(item => {
+            item.addEventListener('click', () => {
+                const p = item.nextElementSibling;
+                p.style.display = p.style.display === 'none' ? 'block' : 'none';
+            });
+        });
+    </script>
+</body>
+</html>
